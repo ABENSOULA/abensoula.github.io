@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en" class="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>A.B · BI Expert / Power BI Data Analyst · 10 Years Experience</title>
+<title>A.B · Tech Lead Data & Analytics · 10+ Years Experience</title>
 <style>
   :root{
     --paper:#FBFBFD; --ink:#111318; --muted:#5b6270; --line:#e6e7eb;
@@ -47,7 +48,7 @@
   nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;}
   .brand span.logo{width:34px;height:34px;border-radius:9px;background:var(--accent);
-    color:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;}
+    color:#08201f;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;}
   .nav-links{display:flex;gap:6px;}
   .nav-links a{padding:8px 12px;border-radius:8px;font-size:14px;color:var(--muted);}
   .nav-links a:hover{color:var(--ink);background:var(--accent-soft);}
@@ -67,12 +68,12 @@
   .eyebrow{font-family:ui-monospace,monospace;text-transform:uppercase;letter-spacing:.18em;
     font-size:12px;color:var(--accent);font-weight:600;margin:0 0 10px;}
   .section-title{font-size:32px;font-weight:800;letter-spacing:-0.02em;}
-  .lead{color:var(--muted);font-size:17px;max-width:680px;}
+  .lead{color:var(--muted);font-size:17px;max-width:720px;}
 
   /* Hero */
   .hero{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center;padding:80px 0;}
-  .hero h1{font-size:44px;font-weight:800;letter-spacing:-0.02em;margin-top:14px;}
-  .hero p.tagline{margin-top:18px;color:var(--muted);font-size:17px;max-width:560px;}
+  .hero h1{font-size:42px;font-weight:800;letter-spacing:-0.02em;margin-top:14px;}
+  .hero p.tagline{margin-top:18px;color:var(--muted);font-size:17px;max-width:600px;}
   .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;}
   .avatar-card{aspect-ratio:4/5;border-radius:20px;border:1px solid var(--line);
     background:linear-gradient(135deg,var(--accent-soft),var(--card));
@@ -92,6 +93,12 @@
   .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--accent-soft);
     color:var(--accent);font-size:12px;font-weight:600;margin:0 6px 6px 0;}
 
+  /* Core expertise */
+  .expertise-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:24px;}
+  .expertise-item{display:flex;gap:12px;padding:16px;align-items:flex-start;}
+  .expertise-item .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);margin-top:8px;flex-shrink:0;}
+  .expertise-item p{margin:0;font-size:14.5px;font-weight:600;}
+
   /* Skills */
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;}
   .skill-card{padding:20px;}
@@ -107,6 +114,7 @@
   .exp-title{font-size:20px;font-weight:700;margin-top:6px;}
   .exp-company{font-family:ui-monospace,monospace;font-size:12px;text-transform:uppercase;
     letter-spacing:.08em;color:var(--muted);margin-top:6px;}
+  .exp-intro{color:var(--muted);font-size:14.5px;margin-top:14px;}
   .exp-project{margin-top:18px;}
   .exp-project h4{font-size:15px;font-weight:700;margin-bottom:6px;}
   .exp-project p{color:var(--muted);font-size:14px;margin:6px 0 10px;}
@@ -121,6 +129,8 @@
     color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;}
   .cert-item .name{font-weight:600;font-size:14px;}
   .cert-item .date{font-family:ui-monospace,monospace;font-size:12px;color:var(--muted);}
+  .cert-item.new{border-color:var(--accent);}
+  .cert-item.new .icon{background:var(--accent);color:#08201f;}
 
   /* Timeline */
   ol.timeline{position:relative;border-left:2px solid var(--line);margin-top:24px;padding-left:28px;}
@@ -138,16 +148,14 @@
 
   footer{padding:32px 0;text-align:center;color:var(--muted);font-size:13px;border-top:1px solid var(--line);}
 
-  /* Animated counter number pop */
-  .stat-num{transition:opacity .3s ease;}
-
   @media(max-width:820px){
     .hero{grid-template-columns:1fr;}
     .stats{grid-template-columns:repeat(2,1fr);}
     .skills-grid{grid-template-columns:1fr;}
     .cert-grid{grid-template-columns:1fr;}
+    .expertise-grid{grid-template-columns:1fr;}
     .nav-links{display:none;}
-    .hero h1{font-size:32px;}
+    .hero h1{font-size:30px;}
   }
 </style>
 </head>
@@ -159,6 +167,7 @@
       <a href="#top" class="brand"><span class="logo">AB</span><span>A. B.</span></a>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#certifications">Certifications</a>
@@ -177,9 +186,9 @@
   <section id="top">
     <div class="container hero">
       <div data-reveal>
-        <p class="eyebrow">BI Expert · Power BI Data Analyst</p>
-        <h1>10+ years turning enterprise data into decisions that scale.</h1>
-        <p class="tagline">Power BI and Microsoft Fabric expert with deep experience across Finance, Supply Chain and Marketing BI ecosystems — from L4 technical support to full cloud data platform migrations (GCP → Azure / Fabric). Microsoft Certified Trainer.</p>
+        <p class="eyebrow">Tech Lead Data &amp; Analytics</p>
+        <h1>10+ years leading enterprise analytics platforms into a governed, AI-ready future.</h1>
+        <p class="tagline">Specialized in Microsoft Fabric, Power BI, cloud data platforms, semantic modeling, analytics performance engineering, data governance, and AI-ready data foundations — supporting Finance, Supply Chain, Marketing, Manufacturing, Sales, and HR at enterprise scale.</p>
         <div class="hero-actions">
           <a href="mailto:your.email@example.com" class="btn btn-primary">✉ Contact me</a>
           <a href="#" class="btn btn-ghost">⬇ Download CV</a>
@@ -197,7 +206,7 @@
         <div data-reveal style="--reveal-delay:0ms"><div class="stat-num" data-count="10" data-suffix="+">0</div><div class="stat-label">Years experience</div></div>
         <div data-reveal style="--reveal-delay:80ms"><div class="stat-num" data-count="6">0</div><div class="stat-label">Major clients</div></div>
         <div data-reveal style="--reveal-delay:160ms"><div class="stat-num" data-count="70" data-suffix="%">0</div><div class="stat-label">Peak perf. gain via DirectQuery optimization</div></div>
-        <div data-reveal style="--reveal-delay:240ms"><div class="stat-num" data-count="7">0</div><div class="stat-label">Microsoft certifications</div></div>
+        <div data-reveal style="--reveal-delay:240ms"><div class="stat-num" data-count="9">0</div><div class="stat-label">Microsoft &amp; industry certifications</div></div>
       </div>
     </div>
   </section>
@@ -206,10 +215,28 @@
   <section id="about">
     <div class="container">
       <p class="eyebrow" data-reveal>About</p>
-      <h2 class="section-title" data-reveal>Enterprise BI, end to end.</h2>
-      <p class="lead" style="margin-top:16px;" data-reveal style="--reveal-delay:100ms">
-        Data Analyst with 10+ years delivering advanced Power BI and BI solutions across transportation, automotive, logistics and luxury goods. Microsoft Certified: Fabric Analytics Engineer Associate, Power BI Data Analyst Associate, Azure Enterprise Data Analyst Associate, and Microsoft Certified Trainer (MCT). Expert in Power BI optimization, tenant administration and Microsoft Fabric implementation — skilled in DAX, Power Query, BigQuery, data modeling and governance, and proficient in SQL, Python, Snowflake, Synapse, Spark, Databricks, Azure, GCP and SAP.
+      <h2 class="section-title" data-reveal>Platform leadership, technical depth.</h2>
+      <p class="lead" style="margin-top:16px;" data-reveal>
+        Tech Lead Data &amp; Analytics with 10+ years of experience designing, modernizing, and governing enterprise analytics solutions across global and operational environments. Microsoft-certified in Microsoft Fabric, Azure Data Analytics, and Power BI, with experience in GCP BigQuery, Databricks, Snowflake, SAP HANA, SQL, Python, and automation. Combines hands-on technical depth with platform leadership to deliver secure, scalable, high-performing, and trusted analytics products — enabling governed self-service analytics, modern cloud data architectures, reliable semantic layers, and AI-assisted decision support.
       </p>
+    </div>
+  </section>
+
+  <!-- CORE EXPERTISE -->
+  <section id="expertise">
+    <div class="container">
+      <p class="eyebrow" data-reveal>Focus areas</p>
+      <h2 class="section-title" data-reveal>Core expertise</h2>
+      <div class="expertise-grid">
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:0ms"><span class="dot"></span><p>Enterprise Data &amp; Analytics Architecture</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:40ms"><span class="dot"></span><p>Microsoft Fabric, Power BI &amp; Cloud Analytics Platforms</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:80ms"><span class="dot"></span><p>Semantic Modeling, KPI Design &amp; Analytics Engineering</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:120ms"><span class="dot"></span><p>Data Governance, Security, Access Management &amp; Center of Excellence</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:0ms"><span class="dot"></span><p>Cloud Modernization: Azure, Google Cloud BigQuery, Databricks &amp; Snowflake</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:40ms"><span class="dot"></span><p>Performance Engineering, Capacity Optimization &amp; Platform Reliability</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:80ms"><span class="dot"></span><p>Agentic AI, Generative AI Enablement &amp; Analytics Automation</p></div>
+        <div class="card card-hover expertise-item" data-reveal style="--reveal-delay:120ms"><span class="dot"></span><p>Technical Leadership, Stakeholder Management &amp; Global Team Enablement</p></div>
+      </div>
     </div>
   </section>
 
@@ -220,49 +247,74 @@
       <h2 class="section-title" data-reveal>Technical skills</h2>
       <div class="skills-grid">
         <div class="card card-hover skill-card" data-reveal style="--reveal-delay:0ms">
-          <h3>BI &amp; Analytics</h3>
+          <h3>Data &amp; Analytics Platforms</h3>
           <ul>
-            <li class="tag">Power BI Desktop/Service/Premium</li><li class="tag">Fabric</li>
-            <li class="tag">DirectQuery optimization</li><li class="tag">Composite Models</li>
-            <li class="tag">RLS</li><li class="tag">DAX Studio</li><li class="tag">SAP Crystal Reports</li>
+            <li class="tag">Microsoft Fabric</li><li class="tag">Power BI Desktop/Service/Premium</li>
+            <li class="tag">OneLake</li><li class="tag">Lakehouse</li><li class="tag">Semantic Models</li>
+            <li class="tag">Power BI Report Server</li><li class="tag">Power BI Embedded</li>
+            <li class="tag">Power BI REST API</li><li class="tag">Azure Synapse Analytics</li><li class="tag">Azure Data Factory</li>
           </ul>
         </div>
         <div class="card card-hover skill-card" data-reveal style="--reveal-delay:60ms">
-          <h3>Cloud Platforms</h3>
+          <h3>Cloud &amp; Data Platforms</h3>
           <ul>
-            <li class="tag">Azure Synapse</li><li class="tag">Azure Data Factory</li>
-            <li class="tag">GCP BigQuery</li><li class="tag">BI Engine</li>
-            <li class="tag">Databricks</li><li class="tag">Snowflake</li>
+            <li class="tag">Microsoft Azure</li><li class="tag">GCP BigQuery</li><li class="tag">Databricks</li>
+            <li class="tag">Snowflake</li><li class="tag">SAP HANA</li><li class="tag">SAP Business One HANA</li>
+            <li class="tag">Hadoop</li><li class="tag">Spark</li>
           </ul>
         </div>
         <div class="card card-hover skill-card" data-reveal style="--reveal-delay:120ms">
-          <h3>ETL &amp; Data Integration</h3>
+          <h3>Data Modeling &amp; Analytics Engineering</h3>
           <ul>
-            <li class="tag">Talend</li><li class="tag">KNIME</li><li class="tag">Fabric Pipelines</li>
-            <li class="tag">Hadoop</li><li class="tag">Spark</li><li class="tag">Star Schema</li>
+            <li class="tag">Dimensional Modeling</li><li class="tag">Star Schema</li><li class="tag">Snowflake Schema</li>
+            <li class="tag">Data Warehouse Design</li><li class="tag">Semantic Modeling</li><li class="tag">DAX</li>
+            <li class="tag">Power Query</li><li class="tag">DirectQuery</li><li class="tag">Composite Models</li>
+            <li class="tag">Incremental Refresh</li><li class="tag">Aggregation Tables</li><li class="tag">Query Folding</li>
+            <li class="tag">DAX Optimization</li><li class="tag">Performance Tuning</li>
           </ul>
         </div>
         <div class="card card-hover skill-card" data-reveal style="--reveal-delay:0ms">
-          <h3>Databases &amp; SQL</h3>
+          <h3>Data Integration &amp; Automation</h3>
           <ul>
-            <li class="tag">T-SQL</li><li class="tag">MySQL</li><li class="tag">SQL Server</li>
-            <li class="tag">PL/SQL</li><li class="tag">SAP HANA</li><li class="tag">HBase</li>
-            <li class="tag">SQL Profiler</li>
+            <li class="tag">Azure Data Factory</li><li class="tag">Microsoft Fabric Pipelines</li>
+            <li class="tag">ETL/ELT</li><li class="tag">Python</li><li class="tag">PowerShell</li>
+            <li class="tag">SQL</li><li class="tag">JavaScript</li><li class="tag">REST APIs</li>
           </ul>
         </div>
         <div class="card card-hover skill-card" data-reveal style="--reveal-delay:60ms">
-          <h3>Programming &amp; Scripting</h3>
+          <h3>Governance, Security &amp; Operations</h3>
           <ul>
-            <li class="tag">DAX Fusion</li><li class="tag">Python</li><li class="tag">PowerShell</li>
-            <li class="tag">JavaScript</li><li class="tag">jQuery</li><li class="tag">PHP</li><li class="tag">Java SE/EE</li>
+            <li class="tag">Data Governance</li><li class="tag">Data Quality</li><li class="tag">Data Lineage</li>
+            <li class="tag">Row-Level Security</li><li class="tag">Role-Based Access Control</li>
+            <li class="tag">Access Management</li><li class="tag">Tenant Administration</li>
+            <li class="tag">Workspace Governance</li><li class="tag">Capacity Management</li>
+            <li class="tag">Center of Excellence</li><li class="tag">Monitoring &amp; Operational Support</li>
           </ul>
         </div>
         <div class="card card-hover skill-card" data-reveal style="--reveal-delay:120ms">
-          <h3>ERP &amp; Governance</h3>
+          <h3>AI-Enabled Analytics</h3>
           <ul>
-            <li class="tag">SAP B1 HANA</li><li class="tag">Produmex</li><li class="tag">Odoo</li>
-            <li class="tag">Sopra HR Access</li><li class="tag">RBAC</li><li class="tag">Data Lineage</li>
-            <li class="tag">CoE</li><li class="tag">Scrum/Agile</li>
+            <li class="tag">Enterprise Generative AI</li><li class="tag">Agentic AI</li>
+            <li class="tag">LLM-Enabled Analytics Workflows</li><li class="tag">AI-Assisted Documentation</li>
+            <li class="tag">Semantic Model Data Readiness</li><li class="tag">Analytics Automation</li>
+            <li class="tag">AI Governance Foundations</li><li class="tag">Natural-Language Analytics</li>
+            <li class="tag">Governed Data Products</li>
+          </ul>
+        </div>
+        <div class="card card-hover skill-card" data-reveal style="--reveal-delay:0ms">
+          <h3>ERP &amp; Business Applications</h3>
+          <ul>
+            <li class="tag">SAP Business One HANA</li><li class="tag">SAP B1 Analytics</li><li class="tag">Produmex</li>
+            <li class="tag">SAP Crystal Reports</li><li class="tag">Odoo CRM</li><li class="tag">Sopra HR Access</li>
+          </ul>
+        </div>
+        <div class="card card-hover skill-card" data-reveal style="--reveal-delay:60ms">
+          <h3>Project Management &amp; Methodologies</h3>
+          <ul>
+            <li class="tag">Agile</li><li class="tag">Scrum</li><li class="tag">SAP Activate</li>
+            <li class="tag">Accelerated Implementation Project</li><li class="tag">Stakeholder Workshops</li>
+            <li class="tag">Requirements Analysis</li><li class="tag">User Acceptance Testing</li>
+            <li class="tag">Technical Documentation</li><li class="tag">End-User Enablement</li>
           </ul>
         </div>
       </div>
@@ -278,85 +330,104 @@
       <div class="exp-card card card-hover" data-reveal>
         <div class="exp-head">
           <div>
-            <div class="exp-date">March 2023 – Now</div>
-            <div class="exp-title">Data Analyst PBI / BI Expert</div>
-            <div class="exp-company">L'Oréal Beauty Tech Data Platform</div>
+            <div class="exp-date">March 2023 – Present</div>
+            <div class="exp-title">Tech Lead Data &amp; Analytics</div>
+            <div class="exp-company">L'Oréal Beauty Tech Global Data Platform</div>
           </div>
         </div>
+        <p class="exp-intro">Provide technical leadership for global analytics capabilities within L'Oréal's data platform, supporting Finance, Supply Chain, Marketing, and other business domains. Contribute to the evolution of a scalable, governed, secure, and AI-ready analytics ecosystem.</p>
+
         <div class="exp-project">
-          <h4>BI Consultant – Power BI Expert, Global Data Platform</h4>
-          <p>Advanced Power BI expertise across Finance, Supply Chain and Marketing.</p>
+          <h4>Analytics Platform Architecture &amp; Delivery</h4>
           <ul>
-            <li>Deliver L4 Power BI support with Microsoft Product Managers.</li>
-            <li>Optimize ETL, data models and reports for performance and scalability.</li>
-            <li>Integrate and tune Power BI with GCP BigQuery, ensuring DirectQuery performance.</li>
-            <li>Implement RLS, security rules and access management for enterprise-level governance.</li>
-            <li>Manage tenant &amp; Premium Capacity, support Microsoft Fabric adoption.</li>
+            <li>Lead the design and operational evolution of enterprise analytics solutions supporting Finance, Supply Chain, Marketing, and other business domains.</li>
+            <li>Partner with data engineering, cloud infrastructure, security, product, and business teams to translate analytical requirements into scalable and maintainable data products.</li>
+            <li>Define reusable standards for semantic modeling, KPI design, technical documentation, data lineage, and secure data-access patterns.</li>
+            <li>Provide senior-level Power BI expertise and L4 technical support, collaborating with Microsoft product teams on high-priority escalations.</li>
+            <li>Diagnose and resolve complex issues across reports, semantic models, gateways, service connectivity, tenant operations, and platform reliability.</li>
           </ul>
         </div>
+
         <div class="exp-project">
-          <h4>DirectQuery Performance Optimization Task Force</h4>
+          <h4>Microsoft Fabric &amp; Cloud Data Modernization</h4>
           <ul>
-            <li>Analyzed performance with DAX Studio, SQL Profiler and BigQuery logs.</li>
-            <li>Applied query folding, DAX Fusion, incremental refresh, composite models.</li>
-            <li>Achieved up to 70% performance improvement; contributed to L'Oréal's Power BI Optimization Framework.</li>
+            <li>Lead technical design and contribute to the analytics workstream for the modernization of critical reporting, semantic-model, and data-transformation workloads from GCP BigQuery toward Azure and Microsoft Fabric.</li>
+            <li>Define phased migration patterns for Power BI semantic models, reporting workloads, and ETL/ELT pipelines across Azure Data Lake, Synapse, and Fabric OneLake.</li>
+            <li>Re-engineer DirectQuery and composite models to align with Fabric lakehouse architecture while maintaining performance, reliability, and scalability.</li>
+            <li>Replicate access-control and lineage requirements across environments; validate data fidelity and reporting consistency through automated reconciliation processes using PowerShell, Python, and Power BI REST APIs.</li>
+            <li>Enable the coexistence of legacy GCP assets and Azure/Fabric workloads during transition, minimizing disruption for business users.</li>
           </ul>
         </div>
+
         <div class="exp-project">
-          <h4>Power BI Performance Stress Test &amp; Validation Tool</h4>
+          <h4>Governance, Security &amp; Operational Excellence</h4>
           <ul>
-            <li>Built custom tool using PowerShell, JavaScript APIs and the Power BI REST API.</li>
-            <li>Delivered a "Green Light" certification process for scalability and stability.</li>
+            <li>Establish and promote governance standards for Power BI and Fabric, including workspace policies, access roles, deployment practices, and controlled release processes.</li>
+            <li>Implement Role-Based Access Control and Row-Level Security across data sources, semantic models, and analytical applications.</li>
+            <li>Build monitoring dashboards for capacity and usage tracking; support tenant administration and Premium/Fabric capacity optimization.</li>
+            <li>Train global teams and promote standards for data quality, naming conventions, KPI consistency, documentation, and data lineage.</li>
           </ul>
         </div>
+
         <div class="exp-project">
-          <h4>Power BI Governance &amp; Center of Excellence (CoE)</h4>
+          <h4>Performance Engineering &amp; Analytics Reliability</h4>
           <ul>
-            <li>Defined workspace policies, access roles and deployment pipelines.</li>
-            <li>Trained global teams; aligned architecture with Synapse, Databricks and BigQuery.</li>
+            <li>Diagnose end-to-end performance issues across data sources, semantic models, reports, queries, visuals, and capacity resources using DAX Studio, SQL Profiler, and BigQuery logs.</li>
+            <li>Lead a DirectQuery performance optimization task force, redesigning data models and implementing hybrid architectures, aggregation tables, query-folding improvements, DAX optimization, incremental refresh, and composite models.</li>
+            <li>Achieved performance improvements of up to 70% for selected critical analytics workloads and contributed to the internal Power BI Optimization Framework.</li>
+            <li>Developed an automated Power BI performance stress-test and validation tool to simulate concurrent user loads, monitor performance metrics, and support deployment-readiness certification.</li>
           </ul>
         </div>
+
         <div class="exp-project">
-          <h4>Cloud Data Platform Migration – GCP to Azure &amp; Microsoft Fabric</h4>
+          <h4>AI-Enabled Analytics &amp; Automation</h4>
           <ul>
-            <li>Led phased migration of Power BI datasets, semantic models and ETL from BigQuery to Fabric OneLake.</li>
-            <li>Re-engineered DirectQuery/composite models for Fabric's lakehouse architecture.</li>
-            <li>Validated data fidelity post-migration via automated reconciliation (PowerShell, Python, REST API).</li>
+            <li>Prepare governed and documented semantic data assets to support enterprise Generative AI and AI-assisted analytics use cases.</li>
+            <li>Design agentic AI workflows to automate analytics best-practice validation, governance-policy application, semantic-model readiness checks, and technical documentation generation.</li>
+            <li>Integrate analytics knowledge assets with an internal enterprise Generative AI platform, enabling governed natural-language access to analytics standards, policies, and technical knowledge.</li>
+            <li>Improve analytics delivery consistency and productivity by operationalizing reusable rules, policies, technical guidance, and documentation practices through AI-assisted workflows.</li>
           </ul>
         </div>
+
         <div style="margin-top:14px;">
-          <span class="tag">Power BI</span><span class="tag">Fabric</span><span class="tag">BigQuery</span>
+          <span class="tag">Microsoft Fabric</span><span class="tag">Power BI</span><span class="tag">BigQuery</span>
           <span class="tag">Azure Synapse</span><span class="tag">DAX</span><span class="tag">PowerShell</span>
+          <span class="tag">Agentic AI</span><span class="tag">Generative AI</span>
         </div>
       </div>
 
       <div class="exp-card card card-hover" data-reveal>
         <div class="exp-head">
           <div>
-            <div class="exp-date">Aug 2018 – March 2023</div>
-            <div class="exp-title">Data Analyst PBI / BI-ERP Consultant</div>
+            <div class="exp-date">Aug 2018 – Mar 2023</div>
+            <div class="exp-title">BI, Data &amp; ERP Consultant</div>
             <div class="exp-company">KIA</div>
           </div>
         </div>
+        <p class="exp-intro">Delivered business intelligence, data integration, and ERP initiatives supporting supply chain, sales, customer relationship management, and human resources operations.</p>
+
         <div class="exp-project">
-          <h4>End-to-End Supply Chain BI Solution – Power BI &amp; SAP HANA</h4>
+          <h4>Supply Chain Analytics &amp; Business Intelligence</h4>
           <ul>
-            <li>Integrated SAP, Produmex, Odoo, HR Access and Excel via Talend ETL.</li>
-            <li>Designed star schema models; defined KPIs (Supplier Compliance, Transportation Cost, Full Delivery Rate).</li>
-            <li>Deployed to Power BI Service with RBAC and workspace governance.</li>
+            <li>Led the delivery of an end-to-end analytics solution covering procurement, logistics, manufacturing, inventory, sales, and CRM, supporting both operational teams and executive decision-making.</li>
+            <li>Facilitated stakeholder workshops to define KPI frameworks, reporting priorities, analytical dimensions, and business requirements.</li>
+            <li>Integrated SAP, Produmex, Odoo, HR Access, and Excel data through Talend ETL processes; designed dimensional models and star schemas with data-cleansing and transformation rules.</li>
+            <li>Developed SAP HANA SQL queries, DAX calculations, and Power BI dashboards to monitor supplier compliance, transportation costs, delivery performance, inventory, sales, and operational KPIs.</li>
+            <li>Deployed Power BI solutions with role-based access controls and workspace governance; delivered user training, technical documentation, and best-practice guidance.</li>
           </ul>
         </div>
+
         <div class="exp-project">
-          <h4>Odoo CRM Implementation – Sales Order Portal</h4>
-          <ul><li>Designed Odoo database architecture and CRM analytics reports.</li></ul>
+          <h4>CRM &amp; HR Transformation</h4>
+          <ul>
+            <li>Led the implementation of an Odoo CRM solution and customer portal, improving sales-order visibility, customer management, after-sales monitoring, and CRM reporting.</li>
+            <li>Led the deployment of Sopra HR Access for HR operations, including payroll structures, talent management, time and attendance, testing, data-quality controls, and workforce analytics dashboards.</li>
+          </ul>
         </div>
-        <div class="exp-project">
-          <h4>Sopra HR Access ERP – HR Management System</h4>
-          <ul><li>Configured payroll, talent management and time &amp; attendance processes; ran SIT/UAT.</li></ul>
-        </div>
+
         <div style="margin-top:14px;">
           <span class="tag">SAP HANA</span><span class="tag">Talend</span><span class="tag">Odoo</span>
-          <span class="tag">Power BI</span><span class="tag">RBAC</span>
+          <span class="tag">Power BI</span><span class="tag">RBAC</span><span class="tag">Sopra HR Access</span>
         </div>
       </div>
 
@@ -364,23 +435,30 @@
         <div class="exp-head">
           <div>
             <div class="exp-date">Jun 2016 – Aug 2018</div>
-            <div class="exp-title">Data Analyst PBI / BI-ERP Consultant</div>
+            <div class="exp-title">BI, Data &amp; ERP Consultant</div>
             <div class="exp-company">Hyundai</div>
           </div>
         </div>
+        <p class="exp-intro">Delivered manufacturing analytics and ERP transformation initiatives to improve operational visibility, supply chain execution, and data quality.</p>
+
         <div class="exp-project">
-          <h4>Manufacturing Performance Management – Real-Time Dashboard</h4>
+          <h4>Manufacturing Performance Management &amp; Analytics</h4>
           <ul>
-            <li>Consolidated CSV, Excel and SAP HANA via automated ETL.</li>
-            <li>Defined KPIs: Production Cost, Product/Raw Material Quality, Manufacturing Efficiency, Inventory Turnover.</li>
+            <li>Designed and implemented a centralized manufacturing analytics solution, providing near-real-time visibility into production, warehouse operations, inventory, costs, and quality performance.</li>
+            <li>Defined operational KPIs with manufacturing and supply chain stakeholders, including production efficiency, production costs, finished-product and raw-material quality, and inventory turnover.</li>
+            <li>Consolidated SAP HANA, CSV, Excel, and operational data through automated ETL processes; developed Power BI dashboards that enabled teams to monitor trends, identify issues, and support timely decisions.</li>
           </ul>
         </div>
+
         <div class="exp-project">
-          <h4>SAP B1 HANA / Produmex ERP Implementation (AIP)</h4>
+          <h4>SAP Business One HANA &amp; Produmex ERP Implementation</h4>
           <ul>
-            <li>Led end-to-end supply chain infrastructure build; SAP Crystal Reports; data migration and testing.</li>
+            <li>Led the end-to-end implementation of SAP Business One HANA integrated with Produmex, supporting the design and rollout of manufacturing and supply chain processes.</li>
+            <li>Led requirements analysis, cross-functional workshops, system configuration, technical installation activities, master-data migration, end-to-end testing, and go-live readiness.</li>
+            <li>Developed operational reports using SAP Crystal Reports and provided post-go-live support, data-quality practices, and end-user training to support sustainable adoption.</li>
           </ul>
         </div>
+
         <div style="margin-top:14px;">
           <span class="tag">SAP B1 HANA</span><span class="tag">Produmex</span><span class="tag">Power BI</span><span class="tag">Crystal Reports</span>
         </div>
@@ -394,29 +472,39 @@
             <div class="exp-company">Renault</div>
           </div>
         </div>
+        <p class="exp-intro">Supported the deployment and operational adoption of a dealer management system across authorized dealer agencies.</p>
         <div class="exp-project">
-          <h4>Data Management System (DMS) Implementation – Dealer Network</h4>
           <ul>
-            <li>Deployed DMS across multiple dealer agencies; end-user training programs.</li>
-            <li>Established data consolidation processes and monthly analysis reporting.</li>
+            <li>Supported the implementation and administration of a Dealer Management System (DMS) to centralize dealer operations across the authorized network.</li>
+            <li>Deployed and supported the platform for multiple dealer agencies, helping ensure operational continuity and user adoption.</li>
+            <li>Conducted business-needs analysis and delivered end-user training to improve system utilization and user satisfaction.</li>
+            <li>Collaborated with development and business teams to support system integration and improve data consistency across dealer operations.</li>
+            <li>Established data-consolidation and monitoring processes to strengthen data integrity and synchronization between dealer systems.</li>
+            <li>Produced monthly performance and management reports aligned with operational-monitoring and strategic-management needs.</li>
+            <li>Contributed to the design and implementation of digital solutions supporting dealer operations and customer engagement.</li>
+            <li>Supported network and security administration activities using Sophos solutions.</li>
           </ul>
         </div>
-        <div style="margin-top:14px;"><span class="tag">DMS</span><span class="tag">Data Consolidation</span><span class="tag">SOPHOS</span></div>
+        <div style="margin-top:14px;"><span class="tag">DMS</span><span class="tag">Data Consolidation</span><span class="tag">Sophos</span></div>
       </div>
 
       <div class="exp-card card card-hover" data-reveal>
         <div class="exp-head">
           <div>
             <div class="exp-date">Nov 2014 – Jun 2015</div>
-            <div class="exp-title">Data Analyst Internship</div>
+            <div class="exp-title">Data Analyst Intern</div>
             <div class="exp-company">Sonelgaz</div>
           </div>
         </div>
+        <p class="exp-intro">Contributed to the delivery of a business intelligence solution supporting human resources reporting and workforce decision-making.</p>
         <div class="exp-project">
-          <h4>HR Decision-Making System – BI Solution</h4>
           <ul>
-            <li>Built ETL with Talend; defined KPIs (Payroll Evolution, Internal Mobility, Cost of Recruitment).</li>
-            <li>Delivered interactive dashboards in SpagoBI.</li>
+            <li>Gathered requirements with Human Resources stakeholders to define reporting needs, analytical dimensions, workforce indicators, and management priorities.</li>
+            <li>Designed and implemented a Business Intelligence solution supporting HR analytics and workforce-planning activities.</li>
+            <li>Developed and orchestrated ETL processes using Talend to integrate and transform HR data from multiple sources.</li>
+            <li>Defined and optimized HR KPIs, including payroll evolution, internal mobility rate, recruitment cost, and workforce-monitoring indicators.</li>
+            <li>Developed SQL queries in SpagoBI to support KPI calculation and performance-optimized data retrieval.</li>
+            <li>Designed and deployed interactive reports and dashboards to support payroll analysis, workforce monitoring, and HR decision support.</li>
           </ul>
         </div>
         <div style="margin-top:14px;"><span class="tag">Talend</span><span class="tag">SpagoBI</span><span class="tag">SQL</span></div>
@@ -428,16 +516,18 @@
   <section id="certifications">
     <div class="container">
       <p class="eyebrow" data-reveal>Credentials</p>
-      <h2 class="section-title" data-reveal>Certifications</h2>
+      <h2 class="section-title" data-reveal>Training and certifications</h2>
       <div class="cert-grid">
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:0ms"><span class="icon">🏅</span><div><div class="name">Microsoft Certified Trainer (MCT)</div><div class="date">Sep 2025</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:40ms"><span class="icon">🏅</span><div><div class="name">Fabric Analytics Engineer Associate (DP-600)</div><div class="date">Jun 2024</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:80ms"><span class="icon">🏅</span><div><div class="name">Azure Data Fundamentals (DP-900)</div><div class="date">Dec 2023</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:120ms"><span class="icon">🏅</span><div><div class="name">Azure Enterprise Data Analyst Associate (DP-500)</div><div class="date">Sep 2023</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:0ms"><span class="icon">🏅</span><div><div class="name">Databricks Lakehouse Fundamentals</div><div class="date">Feb 2023</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:40ms"><span class="icon">🏅</span><div><div class="name">Azure Fundamentals (AZ-900)</div><div class="date">Jan 2023</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:80ms"><span class="icon">🏅</span><div><div class="name">Data Analyst Associate (DA-100 / PL-300)</div><div class="date">Oct 2021</div></div></div>
-        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:120ms"><span class="icon">🏅</span><div><div class="name">SAP B1 Application Associate / Activate PM</div><div class="date">Jul 2017</div></div></div>
+        <div class="card card-hover cert-item new" data-reveal style="--reveal-delay:0ms"><span class="icon">🆕</span><div><div class="name">Microsoft Certified: Fabric Data Engineer Associate (DP-700)</div><div class="date">Oct 2025</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:40ms"><span class="icon">🏅</span><div><div class="name">Microsoft Certified Trainer (MCT)</div><div class="date">Sep 2025</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:80ms"><span class="icon">🏅</span><div><div class="name">Fabric Analytics Engineer Associate (DP-600)</div><div class="date">Jun 2024</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:120ms"><span class="icon">🏅</span><div><div class="name">Azure Data Fundamentals (DP-900)</div><div class="date">Dec 2023</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:0ms"><span class="icon">🏅</span><div><div class="name">Azure Enterprise Data Analyst Associate (DP-500)</div><div class="date">Sep 2023</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:40ms"><span class="icon">🏅</span><div><div class="name">Databricks Lakehouse Fundamentals Accreditation</div><div class="date">Feb 2023</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:80ms"><span class="icon">🏅</span><div><div class="name">Azure Fundamentals (AZ-900)</div><div class="date">Jan 2023</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:120ms"><span class="icon">🏅</span><div><div class="name">Data Analyst Associate (DA-100 / PL-300)</div><div class="date">Oct 2021</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:0ms"><span class="icon">🏅</span><div><div class="name">SAP B1 Application Associate / Activate Project Manager</div><div class="date">Jul 2017</div></div></div>
+        <div class="card card-hover cert-item" data-reveal style="--reveal-delay:40ms"><span class="icon">🎓</span><div><div class="name">Engineering Degree in Computer Science — ESI</div><div class="date">Jun 2015</div></div></div>
       </div>
     </div>
   </section>
@@ -448,16 +538,17 @@
       <p class="eyebrow" data-reveal>Path</p>
       <h2 class="section-title" data-reveal>Timeline &amp; education</h2>
       <ol class="timeline" data-reveal>
-        <li><div class="tl-date">Since March 2023</div><div class="tl-title">Data Analyst PBI / BI Expert</div><div class="tl-company">L'Oréal Beauty Tech Data Platform</div></li>
-        <li><div class="tl-date">Aug 2018 – Mar 2023</div><div class="tl-title">Data Analyst PBI / BI-ERP Consultant</div><div class="tl-company">KIA</div></li>
-        <li><div class="tl-date">Jun 2016 – Aug 2018</div><div class="tl-title">Data Analyst PBI / BI-ERP Consultant</div><div class="tl-company">Hyundai</div></li>
+        <li><div class="tl-date">Since March 2023</div><div class="tl-title">Tech Lead Data &amp; Analytics</div><div class="tl-company">L'Oréal Beauty Tech Global Data Platform</div></li>
+        <li><div class="tl-date">Aug 2018 – Mar 2023</div><div class="tl-title">BI, Data &amp; ERP Consultant</div><div class="tl-company">KIA</div></li>
+        <li><div class="tl-date">Jun 2016 – Aug 2018</div><div class="tl-title">BI, Data &amp; ERP Consultant</div><div class="tl-company">Hyundai</div></li>
         <li><div class="tl-date">Oct 2015 – Jun 2016</div><div class="tl-title">ERP Consultant</div><div class="tl-company">Renault</div></li>
-        <li><div class="tl-date">Nov 2014 – Jun 2015</div><div class="tl-title">Data Analyst Internship</div><div class="tl-company">Sonelgaz</div></li>
-        <li><div class="tl-date">Jun 2015</div><div class="tl-title">Engineer's Degree, Computer Science</div><div class="tl-company">ESI</div></li>
+        <li><div class="tl-date">Nov 2014 – Jun 2015</div><div class="tl-title">Data Analyst Intern</div><div class="tl-company">Sonelgaz</div></li>
+        <li><div class="tl-date">Jun 2015</div><div class="tl-title">Engineering Degree in Computer Science</div><div class="tl-company">ESI</div></li>
       </ol>
       <div style="margin-top:24px;" data-reveal>
         <p class="eyebrow">Languages</p>
-        <span class="tag">English — Professional</span><span class="tag">French — Professional</span>
+        <span class="tag">English — Professional working proficiency</span>
+        <span class="tag">French — Professional working proficiency</span>
       </div>
     </div>
   </section>
@@ -467,8 +558,8 @@
     <div class="container">
       <div class="card contact-card" data-reveal>
         <p class="eyebrow">Contact</p>
-        <h2 class="section-title">Let's talk data.</h2>
-        <p class="lead" style="margin:12px auto;">Available for BI consulting missions and Power BI / Fabric expert roles.</p>
+        <h2 class="section-title">Let's build governed, AI-ready analytics.</h2>
+        <p class="lead" style="margin:12px auto;">Available for Tech Lead / Power BI &amp; Fabric leadership roles and analytics platform consulting.</p>
         <div class="contact-links">
           <a href="mailto:your.email@example.com" class="card card-hover contact-item">✉ your.email@example.com</a>
           <a href="#" class="card card-hover contact-item">💼 LinkedIn — add your URL</a>
@@ -480,7 +571,7 @@
 </main>
 
 <footer>
-  <div class="container">© 2026 A.B · BI Expert / Power BI Data Analyst</div>
+  <div class="container">© 2026 A.B · Tech Lead Data &amp; Analytics</div>
 </footer>
 
 <script>
