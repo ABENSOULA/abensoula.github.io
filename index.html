@@ -163,6 +163,22 @@
     .nav-links{display:none;}
     .hero h1{font-size:30px;}
   }
+
+
+  /* Logo strip */
+  .logos-section{padding:48px 0;}
+  .logos-eyebrow{text-align:center;font-family:ui-monospace,monospace;font-size:11px;
+    text-transform:uppercase;letter-spacing:.2em;color:var(--muted);}
+  .logos-eyebrow.small{margin-top:18px;font-size:10px;letter-spacing:.25em;}
+  .logos-list{margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;
+    justify-content:center;gap:14px;}
+  .logo-tile{display:flex;height:56px;width:150px;align-items:center;justify-content:center;
+    border-radius:12px;border:1px solid var(--line);background:var(--card);padding:0 16px;
+    opacity:.8;transition:transform .25s ease, opacity .25s ease, border-color .25s ease, box-shadow .25s ease;}
+  .logo-tile:hover{transform:translateY(-3px);opacity:1;border-color:var(--accent);box-shadow:var(--shadow);}
+  .logo-tile img{max-height:28px;width:auto;max-width:100%;object-fit:contain;}
+  .logo-tile span.logo-text{font-weight:700;font-size:14px;color:var(--ink);letter-spacing:-0.01em;}
+
 </style>
 </head>
 <body>
@@ -215,6 +231,41 @@
         <div data-reveal style="--reveal-delay:160ms"><div class="stat-num" data-count="70" data-suffix="%">0</div><div class="stat-label">Peak perf. gain via DirectQuery optimization</div></div>
         <div data-reveal style="--reveal-delay:240ms"><div class="stat-num" data-count="9">0</div><div class="stat-label">Microsoft &amp; industry certifications</div></div>
       </div>
+    </div>
+  </section>
+
+  <!-- COMPANIES -->
+  <section class="logos-section" aria-label="Companies I have worked with">
+    <div class="container" data-reveal>
+      <p class="logos-eyebrow">Five companies across consulting and enterprise environments</p>
+      <p class="logos-eyebrow small">Selected companies</p>
+      <ul class="logos-list">
+        <li>
+          <a href="https://www.loreal.com" target="_blank" rel="noopener" title="L'Oréal" aria-label="L'Oréal website" class="logo-tile">
+            
+          </a>
+        </li>
+        <li>
+          <a href="https://www.kia.com" target="_blank" rel="noopener" title="KIA" aria-label="KIA website" class="logo-tile">
+             <img src="https://github.com/ABENSOULA/abensoula.github.io/blob/main/Assets/kia.png" alt="KIA logo" loading="lazy">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.hyundai.com" target="_blank" rel="noopener" title="Hyundai" aria-label="Hyundai website" class="logo-tile">
+            <span class="logo-text">Hyundai</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.renault.com" target="_blank" rel="noopener" title="Renault" aria-label="Renault website" class="logo-tile">
+            <span class="logo-text">Renault</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.sonelgaz.dz" target="_blank" rel="noopener" title="Sonelgaz" aria-label="Sonelgaz website" class="logo-tile">
+            <span class="logo-text">Sonelgaz</span>
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
