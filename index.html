@@ -418,70 +418,58 @@
           <div>
             <div class="exp-date">March 2023 – Present</div>
             <div class="exp-title">Tech Lead Data &amp; Analytics</div>
-            <div class="exp-company">L'Oréal Beauty Tech Global Data Platform</div>
+            <div class="exp-company">L'Oréal Beauty Tech Global Data Platform · Paris, France (Global remit: EU, SAPMENA, AMERICAS)</div>
           </div>
-          <a href="https://www.loreal.com" target="_blank" rel="noopener" aria-label="L'Oréal website" class="exp-logo">
-          <img src="https://raw.githubusercontent.com/ABENSOULA/abensoula.github.io/refs/heads/main/Assets/loreal.png" alt="Loreal logo" loading="lazy">
+          <a href="https://www.loreal.com" target="_blank" rel="noopener" aria-label="Loreal website" class="exp-logo">
+            <img src="https://raw.githubusercontent.com/ABENSOULA/abensoula.github.io/refs/heads/main/Assets/loreal.png" alt="Loreal logo" loading="lazy">
           </a>
         </div>
         <p class="exp-intro">Provide technical leadership for global analytics capabilities within L'Oréal's data platform, supporting Finance, Supply Chain, Marketing, and other business domains. Contribute to the evolution of a scalable, governed, secure, and AI-ready analytics ecosystem.</p>
 
         <div class="exp-project">
-          <h4>Analytics Platform Architecture &amp; Delivery</h4>
+          <h4>Global Platform Architecture &amp; Governance</h4>
           <ul>
-            <li>Lead the design and operational evolution of enterprise analytics solutions supporting Finance, Supply Chain, Marketing, and other business domains.</li>
-            <li>Partner with data engineering, cloud infrastructure, security, product, and business teams to translate analytical requirements into scalable and maintainable data products.</li>
-            <li>Define reusable standards for semantic modeling, KPI design, technical documentation, data lineage, and secure data-access patterns.</li>
-            <li>Provide senior-level Power BI expertise and L4 technical support, collaborating with Microsoft product teams on high-priority escalations.</li>
-            <li>Diagnose and resolve complex issues across reports, semantic models, gateways, service connectivity, tenant operations, and platform reliability.</li>
+            <li>Govern an enterprise Power BI / Fabric tenant serving 30,000+ business users across 3 regions (4,000+ workspaces, 200,000+ items) with tiered governance, from policy setting to incident resolution.</li>
+            <li>Manage 7,684 CUs of Fabric capacity across 58 nodes, optimizing resource allocation and query performance for global workloads.</li>
+            <li>Establish platform-wide RBAC and RLS security policies, ensuring strict data compliance across Finance, Supply Chain, and Marketing domains.</li>
+            <li>Partner directly with Microsoft Product Engineering on L4 escalations; co-developed DAX Fusion optimization patterns adopted as global standards.</li>
+            <li>Beta-tested preview Fabric features (BigQuery mirroring, ADBC connector, Entra ID auth) to resolve performance bottlenecks prior to GA release.</li>
           </ul>
         </div>
 
         <div class="exp-project">
           <h4>Microsoft Fabric &amp; Cloud Data Modernization</h4>
           <ul>
-            <li>Lead technical design and contribute to the analytics workstream for the modernization of critical reporting, semantic-model, and data-transformation workloads from GCP BigQuery toward Azure and Microsoft Fabric.</li>
-            <li>Define phased migration patterns for Power BI semantic models, reporting workloads, and ETL/ELT pipelines across Azure Data Lake, Synapse, and Fabric OneLake.</li>
-            <li>Re-engineer DirectQuery and composite models to align with Fabric lakehouse architecture while maintaining performance, reliability, and scalability.</li>
-            <li>Replicate access-control and lineage requirements across environments; validate data fidelity and reporting consistency through automated reconciliation processes using PowerShell, Python, and Power BI REST APIs.</li>
-            <li>Enable the coexistence of legacy GCP assets and Azure/Fabric workloads during transition, minimizing disruption for business users.</li>
+            <li>Architected the technical migration strategy moving mission-critical semantic models (Retail, Finance Cockpit, Supply Chain) from GCP BigQuery to Fabric OneLake.</li>
+            <li>Modernized ETL pipelines using Fabric Mirroring, Notebooks, Pipelines, Data Warehouse, and KQL Eventhouse.</li>
+            <li>Rebuilt Row-Level Security (RLS) policies within Fabric while maintaining optimal query performance.</li>
+            <li>Evaluated storage modes (Direct Lake, DirectQuery, Import, Composite) through rigorous benchmarking to architect optimal workloads.</li>
+            <li>Built an automated reconciliation framework (PowerShell, Python, REST APIs) ensuring data fidelity with no reported business disruption.</li>
           </ul>
         </div>
 
         <div class="exp-project">
-          <h4>Governance, Security &amp; Operational Excellence</h4>
+          <h4>Performance Engineering &amp; Quality Assurance</h4>
           <ul>
-            <li>Establish and promote governance standards for Power BI and Fabric, including workspace policies, access roles, deployment practices, and controlled release processes.</li>
-            <li>Implement Role-Based Access Control and Row-Level Security across data sources, semantic models, and analytical applications.</li>
-            <li>Build monitoring dashboards for capacity and usage tracking; support tenant administration and Premium/Fabric capacity optimization.</li>
-            <li>Train global teams and promote standards for data quality, naming conventions, KPI consistency, documentation, and data lineage.</li>
-          </ul>
-        </div>
-
-        <div class="exp-project">
-          <h4>Performance Engineering &amp; Analytics Reliability</h4>
-          <ul>
-            <li>Diagnose end-to-end performance issues across data sources, semantic models, reports, queries, visuals, and capacity resources using DAX Studio, SQL Profiler, and BigQuery logs.</li>
-            <li>Lead a DirectQuery performance optimization task force, redesigning data models and implementing hybrid architectures, aggregation tables, query-folding improvements, DAX optimization, incremental refresh, and composite models.</li>
-            <li>Achieved performance improvements of up to 70% for selected critical analytics workloads and contributed to the internal Power BI Optimization Framework.</li>
-            <li>Developed an automated Power BI performance stress-test and validation tool to simulate concurrent user loads, monitor performance metrics, and support deployment-readiness certification.</li>
+            <li>Re-engineered DirectQuery architectures, reducing 2–3-minute timeouts to sub-10-second response times for senior leadership.</li>
+            <li>Achieved a 70% performance boost across core workloads by establishing and leading a global DirectQuery optimization task force.</li>
+            <li>Engineered an automated load-testing tool simulating 100+ concurrent users via DAX Studio and Fabric Notebooks; instituted as a mandatory certification gate for 400+ developers.</li>
+            <li>Reduced deployment rollbacks by 80–90% through performance certification standards.</li>
+            <li>Established a Confluence knowledge base for Developer Experience, Best Practices, and Performance Optimization; trained 50+ global teams on delivery standards and lineage tracking.</li>
           </ul>
         </div>
 
         <div class="exp-project">
           <h4>AI-Enabled Analytics &amp; Automation</h4>
           <ul>
-            <li>Prepare governed and documented semantic data assets to support enterprise Generative AI and AI-assisted analytics use cases.</li>
-            <li>Design agentic AI workflows to automate analytics best-practice validation, governance-policy application, semantic-model readiness checks, and technical documentation generation.</li>
-            <li>Integrate analytics knowledge assets with an internal enterprise Generative AI platform, enabling governed natural-language access to analytics standards, policies, and technical knowledge.</li>
-            <li>Improve analytics delivery consistency and productivity by operationalizing reusable rules, policies, technical guidance, and documentation practices through AI-assisted workflows.</li>
+            <li>Deploy agentic AI workflows in production for automated governance validation and documentation, cutting manual review time by 60%.</li>
+            <li>Integrate the internal analytics knowledge base with the enterprise GenAI platform, eliminating Tier-1 support tickets through automated self-service.</li>
+            <li>Deliver dozens of governed semantic data assets to support enterprise Generative AI and natural-language business querying.</li>
           </ul>
         </div>
 
         <div style="margin-top:14px;">
-          <span class="tag">Microsoft Fabric</span><span class="tag">Power BI</span><span class="tag">BigQuery</span>
-          <span class="tag">Azure Synapse</span><span class="tag">DAX</span><span class="tag">PowerShell</span>
-          <span class="tag">Agentic AI</span><span class="tag">Generative AI</span>
+          <span class="tag">Microsoft Fabric</span><span class="tag">Power BI</span><span class="tag">OneLake</span><span class="tag">BigQuery</span><span class="tag">DAX</span><span class="tag">KQL Eventhouse</span><span class="tag">PowerShell</span><span class="tag">Python</span><span class="tag">Agentic AI</span><span class="tag">Generative AI</span>
         </div>
       </div>
 
@@ -492,34 +480,33 @@
             <div class="exp-title">BI, Data &amp; ERP Consultant</div>
             <div class="exp-company">KIA</div>
           </div>
-            <a href="https://www.kia.com" target="_blank" rel="noopener" aria-label="KIA website" class="exp-logo">
-          <img src="https://raw.githubusercontent.com/ABENSOULA/abensoula.github.io/refs/heads/main/Assets/kia.png" alt="KIA logo" loading="lazy">
-</a>
+          <a href="https://www.kia.com" target="_blank" rel="noopener" aria-label="KIA website" class="exp-logo">
+            <img src="https://raw.githubusercontent.com/ABENSOULA/abensoula.github.io/refs/heads/main/Assets/kia.png" alt="KIA logo" loading="lazy">
+          </a>
         </div>
         <p class="exp-intro">Delivered business intelligence, data integration, and ERP initiatives supporting supply chain, sales, customer relationship management, and human resources operations.</p>
 
         <div class="exp-project">
           <h4>Supply Chain Analytics &amp; Business Intelligence</h4>
           <ul>
-            <li>Led the delivery of an end-to-end analytics solution covering procurement, logistics, manufacturing, inventory, sales, and CRM, supporting both operational teams and executive decision-making.</li>
-            <li>Facilitated stakeholder workshops to define KPI frameworks, reporting priorities, analytical dimensions, and business requirements.</li>
-            <li>Integrated SAP, Produmex, Odoo, HR Access, and Excel data through Talend ETL processes; designed dimensional models and star schemas with data-cleansing and transformation rules.</li>
-            <li>Developed SAP HANA SQL queries, DAX calculations, and Power BI dashboards to monitor supplier compliance, transportation costs, delivery performance, inventory, sales, and operational KPIs.</li>
-            <li>Deployed Power BI solutions with role-based access controls and workspace governance; delivered user training, technical documentation, and best-practice guidance.</li>
+            <li>Architected an end-to-end analytics platform spanning procurement, logistics, manufacturing, inventory, sales, and CRM, serving 1000+ business users from operational teams to C-suite.</li>
+            <li>Defined enterprise KPI frameworks through structured workshops with 50+ stakeholders across 6 business domains; standardized reporting priorities and analytical dimensions.</li>
+            <li>Built a data integration layer using Talend ETL to unify SAP, Produmex, Odoo, HR Access, and legacy Excel sources; designed star schemas processing 10k+ records/day with automated cleansing rules.</li>
+            <li>Developed SAP HANA SQL procedures and complex DAX calculations powering Power BI dashboards for supplier compliance, transportation costs, and delivery performance; reduced manual reporting time by 60%.</li>
+            <li>Established Power BI workspace governance and RBAC security for 50+ reports; trained 100+ users on self-service analytics and best practices.</li>
           </ul>
         </div>
 
         <div class="exp-project">
           <h4>CRM &amp; HR Transformation</h4>
           <ul>
-            <li>Led the implementation of an Odoo CRM solution and customer portal, improving sales-order visibility, customer management, after-sales monitoring, and CRM reporting.</li>
-            <li>Led the deployment of Sopra HR Access for HR operations, including payroll structures, talent management, time and attendance, testing, data-quality controls, and workforce analytics dashboards.</li>
+            <li>Led the full-cycle implementation of Odoo CRM and customer portal for 50+ sales users; improved sales-order visibility and after-sales tracking, reducing order inquiry response time from 2 days to 4 hours.</li>
+            <li>Directed the deployment of Sopra HR Access covering payroll, talent management, and time/attendance for 1000+ employees across 8 entities; delivered workforce analytics dashboards enabling real-time headcount visibility for 3 manufacturing plants.</li>
           </ul>
         </div>
 
         <div style="margin-top:14px;">
-          <span class="tag">SAP HANA</span><span class="tag">Talend</span><span class="tag">Odoo</span>
-          <span class="tag">Power BI</span><span class="tag">RBAC</span><span class="tag">Sopra HR Access</span>
+          <span class="tag">SAP HANA</span><span class="tag">Talend</span><span class="tag">Odoo</span><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">RBAC</span><span class="tag">Sopra HR Access</span>
         </div>
       </div>
 
@@ -530,32 +517,33 @@
             <div class="exp-title">BI, Data &amp; ERP Consultant</div>
             <div class="exp-company">Hyundai</div>
           </div>
-            <a href="https://www.hyundai.com" target="_blank" rel="noopener" aria-label="Hyundai website" class="exp-logo">
+          <a href="https://www.hyundai.com" target="_blank" rel="noopener" aria-label="Hyundai website" class="exp-logo">
             <img src="https://raw.githubusercontent.com/ABENSOULA/abensoula.github.io/refs/heads/main/Assets/Hyundai.png" alt="Hyundai logo" loading="lazy">
-</a>
+          </a>
         </div>
         <p class="exp-intro">Delivered manufacturing analytics and ERP transformation initiatives to improve operational visibility, supply chain execution, and data quality.</p>
 
         <div class="exp-project">
           <h4>Manufacturing Performance Management &amp; Analytics</h4>
           <ul>
-            <li>Designed and implemented a centralized manufacturing analytics solution, providing near-real-time visibility into production, warehouse operations, inventory, costs, and quality performance.</li>
-            <li>Defined operational KPIs with manufacturing and supply chain stakeholders, including production efficiency, production costs, finished-product and raw-material quality, and inventory turnover.</li>
-            <li>Consolidated SAP HANA, CSV, Excel, and operational data through automated ETL processes; developed Power BI dashboards that enabled teams to monitor trends, identify issues, and support timely decisions.</li>
+            <li>Architected a centralized manufacturing analytics platform providing near-real-time visibility into production, warehouse operations, inventory, costs, and quality for 500+ users across 2 plants/sites.</li>
+            <li>Defined an operational KPI framework with manufacturing and supply chain leadership, standardizing metrics for production efficiency, OEE, quality defect rates, and inventory turnover across 6 production lines.</li>
+            <li>Built automated ETL pipelines consolidating SAP HANA, Produmex, CSV, and Excel sources; designed data models processing 5k+ records/day to power Power BI dashboards.</li>
+            <li>Enabled real-time quality alerting, reducing scrap by 60% through production monitoring dashboards adopted by 20+ operators/managers.</li>
           </ul>
         </div>
 
         <div class="exp-project">
           <h4>SAP Business One HANA &amp; Produmex ERP Implementation</h4>
           <ul>
-            <li>Led the end-to-end implementation of SAP Business One HANA integrated with Produmex, supporting the design and rollout of manufacturing and supply chain processes.</li>
-            <li>Led requirements analysis, cross-functional workshops, system configuration, technical installation activities, master-data migration, end-to-end testing, and go-live readiness.</li>
-            <li>Developed operational reports using SAP Crystal Reports and provided post-go-live support, data-quality practices, and end-user training to support sustainable adoption.</li>
+            <li>Led the end-to-end implementation of SAP Business One HANA + Produmex integration for manufacturing operations, managing an 8-month rollout across 3 sites.</li>
+            <li>Directed the full project lifecycle: requirements analysis, cross-functional workshops with 20+ stakeholders, system configuration, technical installation, and master-data migration.</li>
+            <li>Developed an operational reporting suite using SAP Crystal Reports; delivered post-go-live support and training for 50+ end users.</li>
           </ul>
         </div>
 
         <div style="margin-top:14px;">
-          <span class="tag">SAP B1 HANA</span><span class="tag">Produmex</span><span class="tag">Power BI</span><span class="tag">Crystal Reports</span>
+          <span class="tag">SAP B1 HANA</span><span class="tag">Produmex</span><span class="tag">Power BI</span><span class="tag">Crystal Reports</span><span class="tag">OEE</span>
         </div>
       </div>
 
